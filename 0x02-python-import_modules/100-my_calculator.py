@@ -3,9 +3,8 @@ if __name__ == "__main__":
     import sys
     import calculator_1 as calc
     call = sys.argv
-    print("Lenght is ", len(call))
     if len(call) != 4:
-        print("Usage: ./100-my_calculator.py {} {} {}".format(call[1], call[2], call[3]))
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     a = int(call[1])
     b = int(call[3])
