@@ -3,7 +3,7 @@ if __name__ == "__main__":
     import sys
     import calculator_1 as calc
     call = sys.argv
-    print(call[1], call[3], "Troy")
+    print("Lenght is ", len(call))
     if len(call) != 4:
         print("Usage: ./100-my_calculator.py {} {} {}".format(call[1], call[2], call[3]))
         sys.exit(1)
