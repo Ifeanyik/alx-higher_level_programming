@@ -6,3 +6,4 @@ def new_in_list(my_list, idx, element):
     if idx >= len(my_list):
         return l_copy
     l_copy[idx] = element
+    return l_copy
