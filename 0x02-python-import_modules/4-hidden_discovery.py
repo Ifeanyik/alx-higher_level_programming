@@ -1,4 +1,14 @@
-#!/usr/bin/python3.8.x
+#!/usr/bin/python3
 import hidden_4
-dir_list = dir(hidden_4)
-print("{}".format(dir_list))
+
+
+def main():
+    file = dir(hidden_4)
+    length = len(file)
+    for i in range(0, length):
+        if file[i][0:2] != "__":
+            print(file[i])
+
+
+if __name__ == "__main__":
+    main()
