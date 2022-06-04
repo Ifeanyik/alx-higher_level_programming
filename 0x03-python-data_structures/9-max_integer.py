@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 def max_integer(my_list=[]):
     iter_num = len(my_list)
     if iter_num == 0:
