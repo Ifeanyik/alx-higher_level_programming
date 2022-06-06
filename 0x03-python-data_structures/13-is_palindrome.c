@@ -8,7 +8,7 @@ int is_palindrome(listint_t **head)
     char s[2], d[2];
     int *arr;
     listint_t *h = *head, *store;
-    long long unsigned int sizeguy, size_arr;
+    long unsigned int sizeguy, size_arr;
     sizeguy = sizeof((*head)->n);
     arr = calloc(1, sizeof(h->n));
     s[0] = 'y';
@@ -36,3 +36,4 @@ int is_palindrome(listint_t **head)
         return (1);
     else
         return (0);
+}
