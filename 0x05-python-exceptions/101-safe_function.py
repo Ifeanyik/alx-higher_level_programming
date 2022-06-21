@@ -1,6 +1,6 @@
 def safe_function(fct, *args):
+    func = None
     try:
-        global func
         func = fct(*args)
         return func
     except Exception as error:
