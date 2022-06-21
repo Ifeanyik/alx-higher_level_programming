@@ -5,5 +5,9 @@ def safe_function(fct, *args):
         func = fct(*args)
         return func
     except Exception as error:
-        print("Exception: {}".format(error))
-        return None
+        try:
+            print("Exception: {}".format(error))
+            return None
+        except Exception as err:
+            print("Exception: {}".format(err))
+            return None
