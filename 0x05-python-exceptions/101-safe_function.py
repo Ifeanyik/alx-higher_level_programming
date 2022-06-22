@@ -6,8 +6,8 @@ def safe_function(fct, *args):
         return func
     except Exception as error:
         try:
-            print("Exception: {}".format(error))
+            print("Exception: {}".format(error), file=stderr)
             return None
         except Exception as err:
-            print("Exception: {}".format(err))
+            print("Exception: {}".format(err), file=stderr)
             return None
