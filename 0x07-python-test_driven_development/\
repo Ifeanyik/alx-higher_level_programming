@@ -1,0 +1,21 @@
+This file tests add function for functionality and edge cases
+
+>>> add(2)
+100
+
+>>> add(4, 4)
+8
+
+>>> add(4, 4.00)
+8
+
+>>> add([1,2,3])
+Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+>>> add(4, {2:1})
+Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
