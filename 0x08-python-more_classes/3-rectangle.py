@@ -47,7 +47,9 @@ class Rectangle:
         return 2 * (self.__height + self.__width)
 
     def __str__(self):
-        '''Runs when print() or str() is used on a Rectangle object'''
+        '''Runs when print() or str() is used on a Rectangle objects'''
+        self.height = self.__height
+        self.width = self.__width
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
