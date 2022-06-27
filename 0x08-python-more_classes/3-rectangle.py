@@ -38,20 +38,24 @@ class Rectangle:
 
     def area(self):
         '''Returns value of rectangle area'''
-        return self.__height * self.__width
+        self.height = self.__height
+        self.width = self.__width
+        return self.height * self.width
 
     def perimeter(self):
         '''Returns perimeter of rectangle object'''
         if self.__height == 0 or self.__width == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        self.height = self.__height
+        self.width = self.__width
+        return 2 * (self.height + self.width)
 
     def __str__(self):
         '''Runs when print() or str() is used on a Rectangle objects'''
         self.height = self.__height
         self.width = self.__width
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i in range(self.height):
+            for j in range(self.width):
                 print("#", end="")
             print()
         return str()
