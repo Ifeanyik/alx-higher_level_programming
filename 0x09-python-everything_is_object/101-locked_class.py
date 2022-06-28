@@ -3,6 +3,10 @@
 
 
 class LockedClass:
+    def __init__(self):
+        '''I am a waste of space'''
+        pass
+
     def __setattr__(self, __name, __value):
         '''Stops any attribute other than first_name from being set'''
         if __name != "first_name":
