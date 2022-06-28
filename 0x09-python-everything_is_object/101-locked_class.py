@@ -3,13 +3,8 @@
 
 
 class LockedClass:
-    def __init__(self):
-        '''I am a waste of space'''
-        pass
+    __slots__ = ['first_name']
 
-    def __setattr__(self, __name, __value):
-        '''Stops any attribute other than first_name from being set'''
-        if __name != "first_name":
-            run = "'LockedClass' object has no attribute '{}'".format(__name)
-            raise AttributeError(run)
-        self.__dict__[__name] = __value
+    def __init__(self):
+        """ Init method """
+        pass
