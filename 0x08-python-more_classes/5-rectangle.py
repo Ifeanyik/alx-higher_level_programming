@@ -4,9 +4,12 @@
 
 class Rectangle:
     '''Defining class attributes'''
+
     def __init__(self, width=0, height=0):
         self.__width = width
+        self.width = self.__width
         self.__height = height
+        self.height = self.__height
 
     @property
     def width(self):
@@ -19,8 +22,6 @@ class Rectangle:
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
-        if value is None:
             raise ValueError("width must be >= 0")
         self.__width = value
 
@@ -35,8 +36,6 @@ class Rectangle:
         if type(value) != int:
             raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("height must be >= 0")
-        if value is None:
             raise ValueError("height must be >= 0")
         self.__height = value
 
@@ -58,10 +57,18 @@ class Rectangle:
         '''Runs when print() or str() is used on a Rectangle objects'''
         self.height = self.__height
         self.width = self.__width
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i in range(self.height):
+            for j in range(self.width):
                 print("#", end="")
-            if i + 1 == self.__height:
-                break
             print()
         return str()
+
+    def __repr__(self):
+        '''Runs when repr() is called'''
+        form = "Rectangle({}, {})".format(self.__width, self.__height)
+        return form
+
+    def __delattr__(self, __name):
+        '''Runs when del is called on a rectangle object'''
+        print("Bye rectangle...")
+        del __name
