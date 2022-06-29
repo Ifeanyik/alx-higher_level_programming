@@ -59,3 +59,7 @@ class Rectangle:
                 print("#", end="")
             print()
         return str()
+
+    def __repr__(self):
+        '''Runs when repr() is called'''
+        return f"Rectangle"
