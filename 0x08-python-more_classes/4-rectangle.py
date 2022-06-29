@@ -6,7 +6,9 @@ class Rectangle:
     '''Defining class attributes'''
     def __init__(self, width=0, height=0):
         self.__width = width
+        self.width = self.__width
         self.__height = height
+        self.height = self.__height
 
     @property
     def width(self):
@@ -62,4 +64,5 @@ class Rectangle:
 
     def __repr__(self):
         '''Runs when repr() is called'''
-        return f"Rectangle"
+        form = "Rectangle({}, {}".format(self.__width, self.__height)
+        return form
