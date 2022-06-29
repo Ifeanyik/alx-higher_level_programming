@@ -58,8 +58,8 @@ class Rectangle:
         '''Runs when print() or str() is used on a Rectangle objects'''
         self.height = self.__height
         self.width = self.__width
-        for i in range(self.height):
-            for j in range(self.width):
+        for i in range(self.__height):
+            for j in range(self.__width):
                 print("#", end="")
             print("")
         return str()
