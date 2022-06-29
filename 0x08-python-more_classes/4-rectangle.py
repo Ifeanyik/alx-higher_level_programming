@@ -64,5 +64,5 @@ class Rectangle:
 
     def __repr__(self):
         '''Runs when repr() is called'''
-        form = "Rectangle({}, {})".format(self.__width, self.__height)
+        form = "Rectangle({:d}, {:d})".format(self.__width, self.__height)
         return form
