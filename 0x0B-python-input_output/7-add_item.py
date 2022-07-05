@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-'''Module that adds all arguments to a python list and
-saves to a json file'''
+"""Module that adds all arguments to a python list and
+saves to a json file
+"""
 
 
 import sys
