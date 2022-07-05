@@ -14,6 +14,6 @@ load_file = __import__('6-load_from_json_file').load_from_json_file
 argv_list = []
 if os.path.exists("add_item.json"):
     argv_list = load_file("add_item.json")
-for i in sys.argv:
+for i in sys.argv[1:]:
     argv_list.append(i)
-save_file(argv_list," add_item.json")
+save_file(argv_list, " add_item.json")
