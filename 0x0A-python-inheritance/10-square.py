@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+'''Implement Square object'''
+
+
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     '''Defines square object attributes'''
