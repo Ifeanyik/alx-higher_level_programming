@@ -10,7 +10,6 @@ def pascal_triangle(n):
     tri_list = []
     ele_list = []
     for i in range(n):
-        print("ran")
         if count == 1:
             ele_list.append(1)
             tri_list.append(ele_list)
