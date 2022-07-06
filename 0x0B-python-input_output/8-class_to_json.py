@@ -3,10 +3,8 @@
 of an objects attributes'''
 
 
-import json
-
-
 def class_to_json(obj):
     '''Returns dictionary description of object attributes'''
-    man = json.dumps(obj.__dict__)
-    return json.loads(man)
+    if hasattr(obj, "__dict__"):
+        return obj.__dict__.copy()
+    return {}
