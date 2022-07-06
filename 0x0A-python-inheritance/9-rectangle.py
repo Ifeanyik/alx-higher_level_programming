@@ -16,7 +16,7 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         '''computes area of object'''
-        return 2(self.__width + self.__height)
+        return self.__width * self.__height
 
     def __str__(self):
         '''Called when str is called on an obj'''
