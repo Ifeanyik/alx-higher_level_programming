@@ -67,7 +67,7 @@ class Base:
         try:
             with open(file_name, "r") as myFile:
                 file_cont = myFile.read()
-                dict_list = json.loads(file_cont)
+                dict_list = from_json_string(file_cont)
                 instance_list = []
                 for i in dict_list:
                     if cls.__name__ == "Rectangle":
