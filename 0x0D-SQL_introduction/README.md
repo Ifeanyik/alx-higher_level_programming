@@ -1,1 +1,1 @@
-More MySQL queries
+Intro to SQL
