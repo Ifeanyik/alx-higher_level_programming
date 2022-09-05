@@ -17,4 +17,4 @@ if (!args[2]) {
     }
   }
   console.log(prevVar);
-}      
+}
