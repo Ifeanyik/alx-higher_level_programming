@@ -9,12 +9,12 @@ if (!args[2]) {
   let largest = args[2];
   let i;
   for (i = 3; args[i]; i++) {
-    if (i == 3) {
+    if (i === 3) {
       if (args[i] > largest) {
         secondLargest = largest;
         largest = args[i];
       } else {
-        if (args[i] != largest) {
+        if (args[i] !== largest) {
           secondLargest = args[i];
         }
       }
