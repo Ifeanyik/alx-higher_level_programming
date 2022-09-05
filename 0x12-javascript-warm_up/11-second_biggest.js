@@ -5,28 +5,19 @@ if (!args[2]) {
 } else if (args[2] && !args[3]) {
   console.log(0);
 } else {
-  let secondLargest;
+  let secondLargest = args[2];
   let largest = args[2];
   let i;
   for (i = 3; args[i]; i++) {
-    if (i === 3) {
-      if (args[i] > largest) {
-        secondLargest = largest;
+    if (args[i] > largest) {
+      if (secondLargest === largest) {
         largest = args[i];
       } else {
-        if (args[i] !== largest) {
-          secondLargest = args[i];
-        }
-      }
+        secondLargest = largest;
+        largest = args[i];
     } else {
-      if (args[i] > largest) {
-        secondLargest = largest;
-        largest = args[i];
-      } else {
-        if (!secondLargest) {
-          secondLargest = args[i];
-        }
-        if ((args[i] < largest) && (args[i] > secondLargest)) {
+      if (args[i] < largest) {
+        if (args[i] > secondLargest) {
           secondLargest = args[i];
         }
       }
