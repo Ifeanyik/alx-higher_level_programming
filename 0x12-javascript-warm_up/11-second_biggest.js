@@ -14,7 +14,7 @@ if (!args[2]) {
         secondLargest = largest;
         largest = args[i];
       } else {
-        if (args[i] != largest) {
+        if (args[i] !== largest) {
           secondLargest = args[i];
         }
       }
