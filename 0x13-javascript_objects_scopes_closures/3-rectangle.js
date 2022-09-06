@@ -9,7 +9,7 @@ class Rectangle {
     }
   }
 
-  print() {
+  print () {
     let h;
     let j;
     for (h = 0; h < this.height; h++) {
