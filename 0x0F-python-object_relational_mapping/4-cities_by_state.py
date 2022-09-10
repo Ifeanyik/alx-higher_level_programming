@@ -11,7 +11,7 @@ if __name__ == "__main__":
     my_host = 'localhost'
     c = dbase.connect(user=arg1, passwd=arg2, db=arg3, host=my_host, port=3306)
     q = c.cursor()
-    col1, col2, table = "id", "name", "cities"
+    col1, col2, table = "cities.id", "cities.name", "cities"
     q.execute("""SELECT * FROM {}
             ORDER BY {} ASC""".format(table, col1))
     rows = q.fetchall()
