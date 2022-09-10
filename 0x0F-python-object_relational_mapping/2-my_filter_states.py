@@ -17,4 +17,5 @@ if __name__ == "__main__":
             WHERE {}='{}'
             ORDER BY {} ASC""".format(col1, col2, table, col2, user_arg, col1))
     rows = q.fetchall()
-    print(rows)
+    for row in rows:
+        print(row)
