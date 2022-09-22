@@ -3,6 +3,8 @@
 
 
 def find_peak(list_of_integers):
+    """This function finds the peak
+    of an unsorted array of integers"""
     if list_of_integers == []:
         return None
 
