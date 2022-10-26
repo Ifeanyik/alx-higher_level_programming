@@ -1,1 +1,1 @@
-$('header').html('<header style="color:red;">First HTML page</header>');
+$('header').html('<header style="color:#FF0000;">First HTML page</header>');
